@@ -1,0 +1,268 @@
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body{
+  font: 400 12px/1 'Bebas', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('../img/bg.png') no-repeat center center / cover;
+}
+
+ul,ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a, a:hover{
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+
+.header{
+  padding: 20px 0 24px 0;
+}
+.container{
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+.nav{
+  display: flex;
+  align-content: center;
+  text-transform: uppercase;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.logo-name-blog{
+  color: #e8603c;
+  font-size: 3rem;
+  cursor: default;
+}
+.logo-name-blog span{
+  color: #f3af9d;
+}
+.primary-menu{
+  display: flex;
+  align-items: center;
+  font-size: 1.33rem;
+}
+.menu-item{
+  padding: 15px 13px;
+  color: #b9b9b9;
+}
+.menu-item:hover{
+  color: #e8603c;
+}
+
+.blog-bg{
+  background: #f2ae9c;
+  width: 100%;
+}
+
+.blog{
+  background: #e8603c;
+  position: relative;
+  padding: 20px 15px;
+  color: #fff;
+  cursor: default;
+}
+
+.blog::after,
+.blog::before,
+.footer::before,
+.footer::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 13px;
+  height: 100%;
+  background: url('../img/bg.png') no-repeat center center / cover;
+}
+.footer::before,
+.blog::before{
+  left: -13px;
+}
+.blog::after,
+.footer::after{
+  right: -13px;
+}
+.sidenav-container{
+  width: 220px;
+  float: right;
+  font-family: 'HelveticaNeue', sans-serif;
+  position: sticky;
+  top: 20px;
+  right: 0;
+}
+.sidenav{
+  margin-bottom: 35px;
+  line-height: 1.2;
+}
+.sidhead{
+  display: flex;
+}
+.sidenav h3{
+  font-family: 'Bebas', sans-serif;
+  font-size: 1.166rem;
+  margin: 0 15px 20px 0;
+  color: #e8603c;
+  white-space: nowrap;
+  display: inline-block;
+}
+.h3-line{
+  height: 13px;
+  width: 100%;
+  background: url(../img/line.png) no-repeat center center / cover;
+}
+.gallery-img{
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-img{
+  width: 50px;
+  height: 50px;
+  margin: 0 5px 5px 0;
+}
+.item-img img{
+  max-width: 100%;
+  min-height: 100%;
+}
+.blog-section{
+  max-width: 700px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.card::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -88px;
+  width: 75px;
+  height: 75px;
+}
+.first-post.card::before{
+    background: url('../img/1.png') no-repeat center center / contain;
+}
+.second-post.card::before{
+    background: url('../img/2.png') no-repeat center center / contain;
+}
+.quote-icon.card::before{
+  background: url('../img/3.png') no-repeat center center / contain;
+}
+
+.gallery,
+.post{
+  max-width: 670px;
+}
+.gallery img{
+  max-width: 100%;
+}
+.post{
+  display: flex;
+  font-family: 'HelveticaNeue', sans-serif;
+  margin: 22px 0 0;
+  padding-bottom: 25px;
+  border-bottom: 10px solid #fff;
+  border-image: url('../img/line.jpg') 20;
+}
+.stats{
+  width: 140px;
+}
+.date,
+.tags,
+.comments{
+  color: #ee8a70;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.date span,
+.tags span,
+.comments span{
+  color: #ccc;
+  text-transform: none;
+  display: block;
+  font-weight: 400;
+}
+.blog-news{
+  max-width: 530px;
+}
+.title-blog-news{
+  font: 400 1.5rem 'Bebas', sans-serif;
+  color: #e8603c;
+  margin-bottom: 20px;
+}
+
+.text-blog-news{
+  color: #414141;
+  font-size: 1rem;
+  line-height: 18px;
+}
+
+.blog-section.quote-icon{
+  padding-bottom: 40px;
+  max-width: 670px;
+  border-bottom: 10px solid #fff;
+  border-image: url('../img/line.jpg') 20;
+}
+
+.quotable-area{
+  background: #f1f1f1;
+  padding: 25px 55px 20px 70px;
+  max-width: 670px;
+  font-family: 'HelveticaNeue', sans-serif;
+  display: flex;
+}
+.quote{
+  display: list-item;
+  list-style-image: url('../img/quotes.png');
+  padding-left: 5px;
+  line-height: 18px;
+  font-size: 1.084rem;
+}
+
+.post.news-with-link{
+  display: block;
+  padding-bottom: 45px;
+}
+.news-with-link .title-blog-news{
+  margin-bottom: 10px;
+}
+.news-with-link .blog-link{
+  display: block;
+  margin-bottom: 25px;
+  color: #a0a0a0;
+}
+.footer{
+  background: #e8603c;
+  position: relative;
+  display: flex;
+  padding: 40px 35px;
+  color: #fff;
+  cursor: default;
+}
+.about-jetro,
+.widget{
+  width: 30%;
+  margin-right: 60px;
+}
+.about-jetro h2,
+.widget h2{
+  font-size: 1.666rem;
+  margin: 0 0 25px;
+}
+.footer p{
+  font-family: 'HelveticaNeue', sans-serif;
+  margin-bottom: 15px;
+}
+.widget span{
+  color: #f3b29d;
+}
